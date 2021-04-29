@@ -1,0 +1,11 @@
+<SensorManager>:
+    size_hint_x:None
+    size_hint_y:None
+
+    #creating a point where the center of the widget is located
+    canvas.after:
+        Color:
+            rgb:1,0,0
+        Ellipse:
+            pos:self.pos
+            size:(10,10)

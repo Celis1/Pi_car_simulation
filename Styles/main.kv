@@ -1,0 +1,26 @@
+
+<GameScreen>:
+    canvas:
+        Color:
+            rgb:.7,.5,.2
+        Rectangle:
+            size:self.width,self.height
+            pos:self.pos
+
+
+
+<Bot>:
+
+    size_hint_x:None
+    size_hint_y:None
+
+    canvas.after:
+        PushMatrix
+        Rotate:
+            angle: self.angle
+            origin: self.center
+        Rectangle:
+            source:'Images/car_img.png'
+            pos: self.pos
+            size: self.size
+        PopMatrix
